@@ -3,6 +3,7 @@ body {
     padding: 0;
     font-family: "Circular Std", "Cabin", "Helvetica Neue", sans-serif;
     color: black;
+    box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -12,8 +13,10 @@ p {
 }
 
 a {
+    cursor: pointer;
     text-decoration: none;
     outline: 0;
+    box-sizing: border-box;
 
     &:visited {
         color: black;
@@ -28,17 +31,36 @@ a {
     }
 }
 
-.bottom-bar-on-hover {
-    position: relative;
-    color: black;
-    border-bottom: 3px solid transparent;
-    padding-bottom: 8px;
+.bold {
+    font-weight: 700;
+}
+
+.hide-bottom-bar-on-hover {
+    padding-bottom: 3px;
+    border-bottom: 2px solid black;
+    border-bottom-color: black;
     transition: all 200ms ease;
+    color: black;
+    text-decoration: none;
 
     &:hover {
-        padding-bottom: 3px;
+        padding-bottom: 5px;
+        border-bottom-color: transparent;
+    }
+}
+
+
+.bottom-bar-on-hover {
+    padding-bottom: 8px;
+    border-bottom: 2px solid transparent;
+    transition: all 200ms ease;
+    color: black;
+    text-decoration: none;
+
+    &:hover {
+        padding-bottom: 4px;
         border-style: none none solid;
-        border-width: 3px;
+        border-width: 2px;
         border-color: black;
     }
 }

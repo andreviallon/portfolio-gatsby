@@ -1,0 +1,35 @@
+.frontpage-container {
+    height: 100vh;
+    width: 100%;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: flex-start;
+    margin-top: 25%;
+}
+
+.title  {
+    display: flex;
+    flex-direction: column;
+    font-size: 3.3rem;
+    margin-bottom: 2rem;
+
+    span {
+        margin-bottom: 0.3rem;
+        font-weight: bold;
+    }
+}
+
+.sub-title {
+    font-size: 1.1rem;
+    padding-bottom: 12rem;
+    line-height: 35px;
+}
+
+.see-portfolio-container {
+    position: absolute;
+    bottom: 50px;
+    text-align: center;
+    left: 0;
+    right: 0;
+}

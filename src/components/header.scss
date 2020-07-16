@@ -11,9 +11,12 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 3rem 5rem;
-    font-weight: 400;
-    font-size: 1.2rem;
+    padding: 60px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
 }
 
 .navigation {
@@ -22,5 +25,7 @@ header {
     
     a {
         margin: 0 1.5rem;
+        font-size: 18px;
+        background-color: transparent;
     }
 }
