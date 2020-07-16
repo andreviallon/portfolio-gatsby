@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Circular Std", "Cabin", "Helvetica Neue", sans-serif;
+    color: black;
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    outline: 0;
+
+    &:visited {
+        color: black;
+    }
+
+    &:hover {
+        color: black;
+    }
+
+    &:active {
+        outline: 0;
+    }
+}
+
+.bottom-bar-on-hover {
+    position: relative;
+    color: black;
+    border-bottom: 3px solid transparent;
+    padding-bottom: 8px;
+    transition: all 200ms ease;
+
+    &:hover {
+        padding-bottom: 3px;
+        border-style: none none solid;
+        border-width: 3px;
+        border-color: black;
+    }
+}
