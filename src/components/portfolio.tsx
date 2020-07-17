@@ -45,7 +45,7 @@ export default function portfolio() {
         }
     `);
 
-    const getImageData = (id: string) => {
+    const getImageData = (id) => {
         const image = data.images.nodes.filter(image => image.id === id);
         return image[0].childImageSharp.fluid;
     }

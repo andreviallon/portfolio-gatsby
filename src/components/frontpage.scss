@@ -1,18 +1,28 @@
 .frontpage-container {
+    visibility: hidden;
     height: 100vh;
     width: 100%;
 }
 
-.title  {
+h1 {
+    margin: 0;
+}
+
+.hero-content-inner  {
     display: flex;
     flex-direction: column;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     margin-top: 30%;
     margin-bottom: 2.5rem;
 
-    span {
-        margin-bottom: 0.5rem;
-        font-weight: bold;
+    .hero-content-line {
+        height: 55px;
+        margin: 0;
+        overflow: hidden;
+
+        .hero-content-line-inner {
+            font-weight: bold;
+        }
     }
 }
 
