@@ -1,11 +1,13 @@
 import React from 'react';
+import Img from 'gatsby-image';
+
 import './portfolioCard.scss';
 
-export default function portfolioCard({project}) {
+export default function portfolioCard({project, image}) {
     return (
         <div className="card-container">
             <div className="img-container">
-                <div className="image-placeholder"></div>
+                <Img fluid={image}/>
             </div>
             <div className="card-content">
                 <p className="card-title">{project.title}</p>

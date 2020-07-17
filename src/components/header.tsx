@@ -7,13 +7,13 @@ const Header = () => (
   <header>
     <div className="flex-container">
       <div className="logo">
-        <Link to="/">andré viallon</Link>
+        <Link to="/" className="bottom-bar-on-hover">andré viallon</Link>
       </div>
 
       <div className="navigation">
-        <Link to="/" className="bottom-bar-on-hover">portfolio</Link>
-        <Link to="/about" className="bottom-bar-on-hover">about</Link>
-        <Link to="/" className="bottom-bar-on-hover">resume</Link>
+        <Link to={"/"} className="bottom-bar-on-hover">portfolio</Link>
+        <Link to={"/about"} className="bottom-bar-on-hover">about</Link>
+        <Link to={"/"} className="bottom-bar-on-hover">resume</Link>
       </div>
     </div>
   </header>
