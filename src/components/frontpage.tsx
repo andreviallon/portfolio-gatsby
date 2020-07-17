@@ -18,9 +18,9 @@ export default function frontpage() {
             </Container>
             <Container>
                 <Row>
-                    <Col sm={7}>
+                    <Col sm={12} md={10} lg={7}>
                         <div className="sub-title">
-                            <span>Welcome to my portfolio. Here you can have a look at my personal projects and learn more about me. You can see more of my coding projects on <a className="hide-bottom-bar-on-hover bold" href="https://dribbble.com/andreviallon" target="_blank">github</a>, see more of my designs on <a className="hide-bottom-bar-on-hover bold" href="https://dribbble.com/andreviallon" target="_blank">dribbble</a>, connect with my on <a className="hide-bottom-bar-on-hover bold" href="https://dribbble.com/andreviallon" target="_blank">linkedin</a> or simply write me an <a className="hide-bottom-bar-on-hover bold" href="https://dribbble.com/andreviallon" target="_blank">email</a>.</span>
+                            <span>Welcome to my portfolio. Here you can have a look at my personal projects and learn more about me. You can also see more of my coding projects on <a className="hide-bottom-bar-on-hover bold" href="https://dribbble.com/andreviallon" target="_blank">github</a>, see more of my designs on <a className="hide-bottom-bar-on-hover bold" href="https://dribbble.com/andreviallon" target="_blank">dribbble</a>, connect with my on <a className="hide-bottom-bar-on-hover bold" href="https://dribbble.com/andreviallon" target="_blank">linkedin</a> or simply write me an <a className="hide-bottom-bar-on-hover bold" href="https://dribbble.com/andreviallon" target="_blank">email</a>.</span>
                         </div>
                     </Col>
                 </Row>

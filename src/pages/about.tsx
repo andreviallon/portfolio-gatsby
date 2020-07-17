@@ -5,8 +5,8 @@ import SEO from "../components/seo"
 
 const About = () => (
     <Layout>
-        <SEO title="404: Not found" />
-        
+        <SEO title="about" />
+        <p>this is the about page</p>
     </Layout>
 )
 
