@@ -4,7 +4,7 @@ import { TimelineLite, TweenMax, Power3 } from 'gsap';
 import './frontpage.scss';
 
 
-export default function frontpage() {
+export default function Frontpage() {
     let frontPage = useRef(null);
     let title = useRef(null);
     let subTitle = useRef(null);
@@ -51,13 +51,13 @@ export default function frontpage() {
                 <Row>
                     <Col sm={12} md={10} lg={7}>
                         <div className="sub-title" ref={el => subTitle = el}>
-                            <span>Welcome to my portfolio. Here you can have a look at my personal projects and learn more about me. You can also see more of my coding projects on <a className="hide-bottom-bar-on-hover bold" href="https://dribbble.com/andreviallon" target="_blank">github</a>, see more of my designs on <a className="hide-bottom-bar-on-hover bold" href="https://dribbble.com/andreviallon" target="_blank">dribbble</a>, connect with my on <a className="hide-bottom-bar-on-hover bold" href="https://dribbble.com/andreviallon" target="_blank">linkedin</a> or simply write me an <a className="hide-bottom-bar-on-hover bold" href="https://dribbble.com/andreviallon" target="_blank">email</a>.</span>
+                            <span>Welcome to my portfolio. Here you can have a look at my personal projects and learn more about me. You can also see more of my coding projects on <a className="hide-bottom-bar-on-hover bold" href="https://github.com/andreviallon" target="_blank" rel="noreferrer">github</a>, see more of my designs on <a className="hide-bottom-bar-on-hover bold" href="https://dribbble.com/andreviallon" target="_blank" rel="noreferrer">dribbble</a>, connect with my on <a className="hide-bottom-bar-on-hover bold" href="https://www.linkedin.com/in/andre-viallon" target="_blank" rel="noreferrer">linkedin</a> or simply write me an <a className="hide-bottom-bar-on-hover bold" href="mailto:viallon.andre@gmail.com" rel="noopener noreferrer">email</a>.</span>
                         </div>
                     </Col>
                 </Row>
             </Container>
             <div className="see-portfolio-container">
-                <a className="hide-bottom-bar-on-hover">see portfolio</a>
+                <a href="/" className="hide-bottom-bar-on-hover">see portfolio</a>
             </div>
         </div>
     )

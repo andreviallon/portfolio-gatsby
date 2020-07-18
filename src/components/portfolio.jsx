@@ -28,7 +28,7 @@ const projects = [
     }
 ]
 
-export default function portfolio() {
+export default function Portfolio() {
     const data = useStaticQuery(graphql`
         query Images {
             images: allFile(filter: {relativeDirectory: {eq: "thumbnails"}}) {
