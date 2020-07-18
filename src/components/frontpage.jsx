@@ -4,10 +4,11 @@ import { TimelineLite, TweenMax, Power3 } from 'gsap';
 import './frontpage.scss';
 
 
-export default function Frontpage() {
+export default function Frontpage({ onClick }) {
     let frontPage = useRef(null);
     let title = useRef(null);
     let subTitle = useRef(null);
+    let seePortfolioRef = useRef(null);
     let tl = new TimelineLite();
 
     useEffect(() => {
@@ -17,13 +18,22 @@ export default function Frontpage() {
         const headlineSecond = headlineFirst.nextSibling;
         const headlineThird = headlineSecond.nextSibling;
         const subHeadline = subTitle.children[0];
+        const seePortfolioBtn = seePortfolioRef.children[0];
 
         tl.staggerFrom([headlineFirst.children, headlineSecond.children, headlineThird.children], 1, {
             y: 55,
             ease: Power3.easeOut
-        }, .15);
-
-        tl.from(subHeadline, 1, { y: 200, opacity: 0, ease: Power3.easeOut }, .8);
+        }, .15)
+        .from(subHeadline, 1, {
+            y: 20,
+            opacity: 0,
+            ease: Power3.easeOut
+        }, .8)
+        .from(seePortfolioBtn, 1, {
+            y: 20,
+            opacity: 0,
+            ease: Power3.easeOut
+        }, 1);
     });
 
     return (
@@ -51,13 +61,17 @@ export default function Frontpage() {
                 <Row>
                     <Col sm={12} md={10} lg={7}>
                         <div className="sub-title" ref={el => subTitle = el}>
-                            <span>Welcome to my portfolio. Here you can have a look at my personal projects and learn more about me. You can also see more of my coding projects on <a className="hide-bottom-bar-on-hover bold" href="https://github.com/andreviallon" target="_blank" rel="noreferrer">github</a>, see more of my designs on <a className="hide-bottom-bar-on-hover bold" href="https://dribbble.com/andreviallon" target="_blank" rel="noreferrer">dribbble</a>, connect with my on <a className="hide-bottom-bar-on-hover bold" href="https://www.linkedin.com/in/andre-viallon" target="_blank" rel="noreferrer">linkedin</a> or simply write me an <a className="hide-bottom-bar-on-hover bold" href="mailto:viallon.andre@gmail.com" rel="noopener noreferrer">email</a>.</span>
+                            <div className="hero-content-line">
+                                <span>Welcome to my portfolio. Here you can have a look at my personal projects and learn more about me. You can also see more of my coding projects on <a className="hide-bottom-bar-on-hover bold" href="https://github.com/andreviallon" target="_blank" rel="noreferrer">github</a>, see more of my designs on <a className="hide-bottom-bar-on-hover bold" href="https://dribbble.com/andreviallon" target="_blank" rel="noreferrer">dribbble</a>, connect with my on <a className="hide-bottom-bar-on-hover bold" href="https://www.linkedin.com/in/andre-viallon" target="_blank" rel="noreferrer">linkedin</a> or simply write me an <a className="hide-bottom-bar-on-hover bold" href="mailto:viallon.andre@gmail.com" rel="noopener noreferrer">email</a>.</span>
+                            </div>
                         </div>
                     </Col>
                 </Row>
             </Container>
-            <div className="see-portfolio-container">
-                <a href="/" className="hide-bottom-bar-on-hover">see portfolio</a>
+            <div className="see-portfolio-container" ref={el => seePortfolioRef = el}>
+                <div className="hero-content-line">
+                    <a onClick={onClick} className="hide-bottom-bar-on-hover">see portfolio</a>
+                </div>
             </div>
         </div>
     )
