@@ -20,7 +20,7 @@ export default function Frontpage({ onClick }) {
         const subHeadline = subTitle;
         const seePortfolioBtn = seePortfolioRef;
 
-        tl.staggerFrom([headlineFirst.children, headlineSecond.children, headlineThird.children], 1, {
+        tl.staggerFrom([headlineFirst.children, headlineSecond.children, headlineThird.children], .6, {
             y: 55,
             ease: Power3.easeOut
         }, .15)

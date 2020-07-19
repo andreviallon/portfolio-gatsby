@@ -18,7 +18,6 @@ const Layout = ({ children }) => {
       <div className="layout-container">
         <main>{children}</main>
       </div>
-      <footer>© {new Date().getFullYear()} Andre Viallon. All rights reserved.</footer>
     </>
   )
 }
