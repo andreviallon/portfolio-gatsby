@@ -17,8 +17,8 @@ export default function Frontpage({ onClick }) {
         const headlineFirst = title.children[0].children[0];
         const headlineSecond = headlineFirst.nextSibling;
         const headlineThird = headlineSecond.nextSibling;
-        const subHeadline = subTitle.children[0];
-        const seePortfolioBtn = seePortfolioRef.children[0];
+        const subHeadline = subTitle;
+        const seePortfolioBtn = seePortfolioRef;
 
         tl.staggerFrom([headlineFirst.children, headlineSecond.children, headlineThird.children], 1, {
             y: 55,
@@ -61,17 +61,13 @@ export default function Frontpage({ onClick }) {
                 <Row>
                     <Col sm={12} md={10} lg={7}>
                         <div className="sub-title" ref={el => subTitle = el}>
-                            <div className="hero-content-line">
-                                <span>Welcome to my portfolio. Here you can have a look at my personal projects and learn more about me. You can also see more of my coding projects on <a className="hide-bottom-bar-on-hover bold" href="https://github.com/andreviallon" target="_blank" rel="noreferrer">github</a>, see more of my designs on <a className="hide-bottom-bar-on-hover bold" href="https://dribbble.com/andreviallon" target="_blank" rel="noreferrer">dribbble</a>, connect with my on <a className="hide-bottom-bar-on-hover bold" href="https://www.linkedin.com/in/andre-viallon" target="_blank" rel="noreferrer">linkedin</a> or simply write me an <a className="hide-bottom-bar-on-hover bold" href="mailto:viallon.andre@gmail.com" rel="noopener noreferrer">email</a>.</span>
-                            </div>
+                            <span>Welcome to my portfolio. Here you can have a look at my personal projects and learn more about me. You can also see more of my coding projects on <a className="hide-bottom-bar-on-hover bold" href="https://github.com/andreviallon" target="_blank" rel="noreferrer">github</a>, see more of my designs on <a className="hide-bottom-bar-on-hover bold" href="https://dribbble.com/andreviallon" target="_blank" rel="noreferrer">dribbble</a>, connect with my on <a className="hide-bottom-bar-on-hover bold" href="https://www.linkedin.com/in/andre-viallon" target="_blank" rel="noreferrer">linkedin</a> or simply write me an <a className="hide-bottom-bar-on-hover bold" href="mailto:viallon.andre@gmail.com" rel="noopener noreferrer">email</a>.</span>
                         </div>
                     </Col>
                 </Row>
             </Container>
             <div className="see-portfolio-container" ref={el => seePortfolioRef = el}>
-                <div className="hero-content-line">
-                    <a onClick={onClick} className="hide-bottom-bar-on-hover">see portfolio</a>
-                </div>
+                <a onClick={onClick} className="hide-bottom-bar-on-hover">see portfolio</a>
             </div>
         </div>
     )

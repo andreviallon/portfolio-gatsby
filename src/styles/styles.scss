@@ -12,13 +12,22 @@ p {
     margin: 0;
 }
 
+.portfolio-container {
+    margin-top: 5rem;
+}
+
 .section-title {
     font-size: 2.4rem;
     color: black;
     font-weight: 700;
 }
 
+.section-container {
+    margin-top: 1.5rem;
+}
+
 a {
+    font-weight: 500;
     cursor: pointer;
     text-decoration: none;
     outline: 0;
@@ -75,4 +84,14 @@ img {
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+}
+
+.hero-content-line {
+    height: 55px;
+    margin: 0;
+    overflow: hidden;
+
+    .hero-content-line-inner {
+        font-weight: bold;
+    }
 }

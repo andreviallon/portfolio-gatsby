@@ -54,13 +54,15 @@ export default function Portfolio() {
         <div>
             <Container>
                 <h2 className="section-title">portfolio</h2>
-                <Row gutterWidth={70}>
-                    {projects.map((project, index) => (
-                        <Col sm={12} md={12} lg={6} key={index}>
-                            <PortfolioCard project={project} image={getImageData(project.imageId)}></PortfolioCard>
-                        </Col>
-                    ))}
-                </Row>
+                <div className="section-container">
+                    <Row gutterWidth={70}>
+                        {projects.map((project, index) => (
+                            <Col sm={12} md={12} lg={6} key={index}>
+                                <PortfolioCard project={project} image={getImageData(project.imageId)}></PortfolioCard>
+                            </Col>
+                        ))}
+                    </Row>
+                </div>
             </Container>
         </div>
     )
