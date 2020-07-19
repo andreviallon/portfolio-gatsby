@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from 'react';
 import PortfolioCard from './portfolioCard';
 import { graphql, useStaticQuery } from 'gatsby';
 import { Container, Row, Col } from 'react-grid-system';
-import { gsap, TimelineLite, TweenMax, Power3 } from 'gsap';
+import { gsap, TweenMax, Power3 } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 import './portfolio.scss';
