@@ -16,14 +16,14 @@ const projects = [
         imageId: "54898cee-6c8f-5bfb-a8b3-bf5f4711a406"
     },
     {
-        title: 'React / Node.js Todo App',
+        title: 'Todo App',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.',
         websiteLink: 'https://infinite-crag-46049.herokuapp.com/',
         githubLink: 'https://github.com/andreviallon/react-node-todo-app',
         imageId: "a497b465-d2a1-5f24-a53b-db77a1268cab"
     },
     {
-        title: 'React Weather App',
+        title: 'Weather App',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.',
         websiteLink: 'https://jovial-williams-ca9530.netlify.app/',
         githubLink: 'https://github.com/andreviallon/weather-app',
