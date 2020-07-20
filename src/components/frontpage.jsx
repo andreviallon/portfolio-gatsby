@@ -67,7 +67,7 @@ export default function Frontpage({ onClick }) {
                 </Row>
             </Container>
             <div className="see-portfolio-container" ref={el => seePortfolioRef = el}>
-                <a onClick={onClick} className="hide-bottom-bar-on-hover">see portfolio</a>
+                <span onClick={onClick} className="anchor hide-bottom-bar-on-hover">see portfolio</span>
             </div>
         </div>
     )
