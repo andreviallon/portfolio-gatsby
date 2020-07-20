@@ -80,6 +80,7 @@ export default function Portfolio() {
 
     const getImageData = (id) => {
         const image = data.images.nodes.filter(image => image.id === id);
+        console.log('image =>', image);
         return image[0].childImageSharp.fluid;
     }
 

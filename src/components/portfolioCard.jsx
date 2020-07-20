@@ -7,7 +7,7 @@ export default function PortfolioCard({project, image}) {
     return (
         <div className="card-container">
             <div className="img-container">
-                <Img fluid={image}/>
+                <Img fluid={image} alt={project.title}/>
             </div>
             <div className="card-content">
                 <p className="card-title">{project.title}</p>
