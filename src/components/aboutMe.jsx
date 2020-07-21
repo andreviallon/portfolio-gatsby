@@ -7,8 +7,8 @@ import './aboutMe.scss';
 
 export default function AboutMe() {
     const data = useStaticQuery(graphql`
-        query MyQuery {
-            file(relativePath: {eq: "avatar/avatar.png"}, name: {}) {
+        query data {
+            image: file(relativePath: {eq: "avatar/avatar.png"}, name: {}) {
                 id
                 childImageSharp {
                     sizes {
@@ -19,9 +19,13 @@ export default function AboutMe() {
                         ...GatsbyImageSharpFluid
                     }
                 }
+            },
+            resume: file(name: { eq: "resume" }) {
+                name
+                extension
+                publicURL
             }
         }
-
     `);
 
     let aboutPage = useRef(null);
@@ -30,7 +34,7 @@ export default function AboutMe() {
     let avatar = useRef(null);
     let resume = useRef(null);
 
-    let tl = new TimelineLite();
+    const tl = new TimelineLite();
 
     useEffect(() => {
         TweenMax.to(aboutPage, 0, { css: { visibility: 'visible' } });
@@ -66,13 +70,13 @@ export default function AboutMe() {
                                 <p>I encourage you to checkout my resume to learn more about my past experience and my skills.</p>
                             </div>
                             <div className="open-resume-container" ref={el => resume = el}>
-                                <a href="/about" className="open-resume hide-bottom-bar-on-hover">open resume</a>
+                                <a href={data.resume.publicURL} target="_blank" rel="noreferrer" className="open-resume hide-bottom-bar-on-hover">open resume</a>
                             </div>
                         </Col>
 
-                        <Col md={12} lg={4}>
+                        <Col md={8} lg={4} offset={{ md: 2, lg: 0 }}>
                             <div className="avatar-container" ref={el => avatar = el}>
-                                <Img fluid={data.file.childImageSharp.fluid} />
+                                <Img fluid={data.image.childImageSharp.fluid} />
                             </div>
                         </Col>
                     </Row>
