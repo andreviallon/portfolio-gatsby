@@ -33,7 +33,7 @@ module.exports = {
       options: {
         fonts: [
           {
-            family: `Cabin`,
+            family: `Rubik`,
             variants: [`300`, `400`, `500`, `600`, `700`]
           }
         ],
