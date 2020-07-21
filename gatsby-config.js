@@ -29,12 +29,14 @@ module.exports = {
     },
     `gatsby-plugin-sass`,
     {
-      resolve: `gatsby-plugin-google-fonts`,
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
         fonts: [
-          `cabin`
+          {
+            family: `Cabin`,
+            variants: [`300`, `400`, `500`, `600`, `700`]
+          }
         ],
-        display: 'swap'
       }
     },
     {

@@ -10,21 +10,21 @@ import './portfolio.scss';
 const projects = [
     {
         title: 'Eventux (work in progress)',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.',
+        description: 'Eventux is a platform for the developers of tomorrow, that allows people to find new and interesting conferences to attend.',
         websiteLink: 'https://infinite-crag-46049.herokuapp.com/',
         githubLink: 'https://github.com/andreviallon/event-app',
         imageName: "eventux-thumbnail"
     },
     {
         title: 'Todo App',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.',
+        description: 'This CRUD application allowed me to familiarize myself with various backend technologies, creating a webserver, rest endpoints and working with databases.',
         websiteLink: 'https://infinite-crag-46049.herokuapp.com/',
         githubLink: 'https://github.com/andreviallon/react-node-todo-app',
         imageName: "todo-app-thumbnail"
     },
     {
         title: 'Weather App',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.',
+        description: 'Simple weather app to enhance my frontend skills.',
         websiteLink: 'https://jovial-williams-ca9530.netlify.app/',
         githubLink: 'https://github.com/andreviallon/weather-app',
         imageName: "weather-app-thumbnail"
