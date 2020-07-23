@@ -13,6 +13,10 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1.8rem 3rem;
+
+    @media (max-width: 768px) {
+        padding: 1.5rem 2rem
+    }
 }
 
 .logo {
@@ -51,12 +55,12 @@ header {
 .show-nav {
     display: block;
     position: fixed;
-    right: 0;
+    z-index: -1;
     background-color: white;
-    top: 93px;
+    top: 0;
+    right: 0;
     bottom: 0;
     left: 0;
-    padding-bottom: 10rem;
 }
 
 .show-only-on-desktop {

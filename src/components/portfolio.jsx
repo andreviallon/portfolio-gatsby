@@ -10,7 +10,7 @@ import './portfolio.scss';
 const projects = [
     {
         title: 'Eventux (work in progress)',
-        description: 'Eventux is a platform for the developers of tomorrow, that allows people to find new and interesting conferences to attend.',
+        description: 'The goal of this project was to create a big scale full stack application. Ranging from user authentication, permission and creating rest endpoints on the backend. And on the frontend focusing on advanced form validation, state management and creating a clean and intuitive user interface.',
         websiteLink: 'https://infinite-crag-46049.herokuapp.com/',
         githubLink: 'https://github.com/andreviallon/event-app',
         imageName: "eventux-thumbnail"

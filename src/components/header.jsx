@@ -25,9 +25,9 @@ const Header = () => {
 
         <div className="show-only-on-desktop">
           <div className="navigation">
-            <Link to={"/"} className="bottom-bar-on-hover" onClick={() => setMenuOpen(false)}>portfolio</Link>
-            <Link to={"/about"} className="bottom-bar-on-hover" onClick={() => setMenuOpen(false)}>about</Link>
-            <a href={resume.pdf.publicURL} target="_blank" rel="noreferrer" className="bottom-bar-on-hover" onClick={() => setMenuOpen(false)}>resume</a>
+            <Link to={"/"} className="bottom-bar-on-hover">portfolio</Link>
+            <Link to={"/about"} className="bottom-bar-on-hover">about</Link>
+            <a href={resume.pdf.publicURL} target="_blank" rel="noreferrer" className="bottom-bar-on-hover">resume</a>
           </div>
         </div>
 
