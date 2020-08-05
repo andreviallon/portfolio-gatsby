@@ -1,7 +1,38 @@
+@font-face {
+    font-family: 'circular';
+    src: url(../fonts//CircularStd-Book.ttf);
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'circular';
+    src: url(../fonts//CircularStd-Medium.ttf);
+    font-style: medium;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'circular';
+    src: url(../fonts//CircularStd-Bold.ttf);
+    font-style: bold;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'circular';
+    src: url(../fonts//CircularStd-Black.ttf);
+    font-style: black;
+    font-weight: 900;
+}
+
+
 body {
     margin: 0;
     padding: 0;
-    font-family: "Rubik", sans-serif;
+    // font-family: "Rubik", sans-serif;
+    font-family: circular;
+    font-weight: 400;
     color: black;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;

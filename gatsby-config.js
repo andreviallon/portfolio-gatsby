@@ -29,17 +29,6 @@ module.exports = {
     },
     `gatsby-plugin-sass`,
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: {
-        fonts: [
-          {
-            family: `Rubik`,
-            variants: [`300`, `400`, `500`, `600`, `700`]
-          }
-        ],
-      }
-    },
-    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `data`,
