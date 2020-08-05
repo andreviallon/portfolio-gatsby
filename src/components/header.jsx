@@ -32,7 +32,7 @@ const Header = () => {
         </div>
 
         <div className="show-only-on-mobile">
-          <span className="anchor bottom-bar-on-hover" onClick={() => setMenuOpen(!menuOpen)}>{`${menuOpen ? "close" : "menu"}`}</span>
+          <span className="anchor" onClick={() => setMenuOpen(!menuOpen)}>{`${menuOpen ? "close" : "menu"}`}</span>
           <div className={`${menuOpen ? "show-nav" : "hide-nav"}`}>
             <div className="mobile-navigation">
               <Link to={"/"} className="bottom-bar-on-hover" onClick={() => setMenuOpen(false)}>portfolio</Link>
