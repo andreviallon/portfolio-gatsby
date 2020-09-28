@@ -20,7 +20,7 @@ const Header = () => {
     <header>
       <div className="flex-container">
         <div className="logo">
-          <Link to="/">andré viallon</Link>
+          <Link to="/" className="bottom-bar-on-hover">andré viallon</Link>
         </div>
 
         <div className="show-only-on-desktop">
