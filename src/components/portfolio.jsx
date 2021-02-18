@@ -19,7 +19,7 @@ const projects = [
         title: 'Todo App',
         description: 'CRUD application allowed me to familiarize myself with various backend technologies, creating a webserver, rest endpoints and working with databases. This project was built using React Gatsby and Node.js.',
         websiteLink: 'https://infinite-crag-46049.herokuapp.com/',
-        githubLink: 'https://github.com/andreviallon/react-node-todo-app',
+        githubLink: 'https://github.com/andreviallon/todo-app',
         imageName: "todo-app-thumbnail"
     },
     {
