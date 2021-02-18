@@ -9,22 +9,22 @@ import './portfolio.scss';
 
 const projects = [
     {
-        title: 'Eventux (work in progress)',
-        description: 'The goal of this project was to create a big scale full stack application. Ranging from user authentication, permission and creating rest endpoints on the backend. And on the frontend focusing on advanced form validation, state management and creating a clean and intuitive user interface.',
-        websiteLink: 'https://infinite-crag-46049.herokuapp.com/',
-        githubLink: 'https://github.com/andreviallon/event-app',
-        imageName: "eventux-thumbnail"
+        title: 'IP Address Tracker',
+        description: 'Search for an IP address and get information about it, such as its location timezone and ISP. This app was built using Angular, NGXS and Leaflet.',
+        websiteLink: 'https://ip-address-tracker-orcin.vercel.app/',
+        githubLink: 'https://github.com/andreviallon/ip-address-tracker',
+        imageName: "ip-address-tracker-thumbnail"
     },
     {
         title: 'Todo App',
-        description: 'This CRUD application allowed me to familiarize myself with various backend technologies, creating a webserver, rest endpoints and working with databases.',
+        description: 'CRUD application allowed me to familiarize myself with various backend technologies, creating a webserver, rest endpoints and working with databases. This project was built using React Gatsby and Node.js.',
         websiteLink: 'https://infinite-crag-46049.herokuapp.com/',
         githubLink: 'https://github.com/andreviallon/react-node-todo-app',
         imageName: "todo-app-thumbnail"
     },
     {
         title: 'Weather App',
-        description: 'Simple weather app to enhance my frontend skills.',
+        description: 'Checkout the current weather and the forecast for the upcoming days. I built this app using React, React Router, context API and utilizing a third party weather API.',
         websiteLink: 'https://jovial-williams-ca9530.netlify.app/',
         githubLink: 'https://github.com/andreviallon/weather-app',
         imageName: "weather-app-thumbnail"
