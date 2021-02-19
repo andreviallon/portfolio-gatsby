@@ -10,7 +10,7 @@ import './portfolio.scss';
 const projects = [
     {
         title: 'IP Address Tracker',
-        description: 'Search for an IP address and get information about it, such as its location timezone and ISP. This app was built using Angular, NGXS and Leaflet.',
+        description: 'Search for an IP address and get information about it, such as its location timezone and ISP. This project was built using Angular, NGXS and Leaflet.',
         websiteLink: 'https://ip-address-tracker-orcin.vercel.app/',
         githubLink: 'https://github.com/andreviallon/ip-address-tracker',
         imageName: "ip-address-tracker-thumbnail"
@@ -24,7 +24,7 @@ const projects = [
     },
     {
         title: 'Weather App',
-        description: 'Checkout the current weather and the forecast for the upcoming days. I built this app using React, React Router, context API and utilizing a third party weather API.',
+        description: 'Checkout the current weather and the forecast for the upcoming days. This project was built using React, React Router, context API and utilizing a third party weather API.',
         websiteLink: 'https://jovial-williams-ca9530.netlify.app/',
         githubLink: 'https://github.com/andreviallon/weather-app',
         imageName: "weather-app-thumbnail"
