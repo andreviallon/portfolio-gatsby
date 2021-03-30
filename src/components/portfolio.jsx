@@ -9,25 +9,18 @@ import './portfolio.scss';
 
 const projects = [
     {
-        title: 'IP Address Tracker',
+        title: 'devjobs',
+        description: 'Search for a developer job, filter or see details about this job. This project was built using Angular, NGXS and GitHub\'s Job api.',
+        websiteLink: 'https://devjobs-eight.vercel.app/',
+        githubLink: 'https://github.com/andreviallon/devjobs',
+        imageName: "devjobs-thumbnail"
+    },
+    {
+        title: 'ip address tracker',
         description: 'Search for an IP address and get information about it, such as its location timezone and ISP. This project was built using Angular, NGXS and Leaflet.',
         websiteLink: 'https://ip-address-tracker-orcin.vercel.app/',
         githubLink: 'https://github.com/andreviallon/ip-address-tracker',
         imageName: "ip-address-tracker-thumbnail"
-    },
-    {
-        title: 'Todo App',
-        description: 'CRUD application allowed me to familiarize myself with various backend technologies, creating a webserver, rest endpoints and working with databases. This project was built using React Gatsby and Node.js.',
-        websiteLink: 'https://infinite-crag-46049.herokuapp.com/',
-        githubLink: 'https://github.com/andreviallon/react-nodejs-todo-app',
-        imageName: "todo-app-thumbnail"
-    },
-    {
-        title: 'Weather App',
-        description: 'Checkout the current weather and the forecast for the upcoming days. This project was built using React, React Router, context API and utilizing a third party weather API.',
-        websiteLink: 'https://jovial-williams-ca9530.netlify.app/',
-        githubLink: 'https://github.com/andreviallon/weather-app',
-        imageName: "weather-app-thumbnail"
     }
 ]
 
@@ -79,7 +72,7 @@ export default function Portfolio() {
 
     const getImageData = (imageName) => {
         const image = data.images.nodes.filter(image => image.name === imageName);
-        return image[0].childImageSharp.fluid;
+        return image[0] ? image[0].childImageSharp.fluid : '';
     }
 
     return (

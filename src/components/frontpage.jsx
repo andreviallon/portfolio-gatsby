@@ -44,10 +44,10 @@ export default function Frontpage({ onClick }) {
                         <div className="hero-content-inner" ref={el => title = el}>
                             <h1>
                                 <div className="hero-content-line">
-                                    <div className="hero-content-line-inner">Hi there, my name is André.</div>
+                                    <div className="hero-content-line-inner">hi there, my name is andré.</div>
                                 </div>
                                 <div className="hero-content-line">
-                                    <div className="hero-content-line-inner">I’m a frontend engineer,</div>
+                                    <div className="hero-content-line-inner">i’m a frontend engineer,</div>
                                 </div>
                                 <div className="hero-content-line">
                                     <div className="hero-content-line-inner">and ui designer.</div>
