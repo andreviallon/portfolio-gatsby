@@ -82,13 +82,11 @@ export default function Portfolio() {
                     <h2 className="section-title">portfolio</h2>
                 </div>
                 <div className="section-container" ref={el => portfolioCards = el}>
-                    <Row gutterWidth={70}>
-                        {projects.map((project, index) => (
-                            <Col sm={12} md={12} lg={6} key={index}>
-                                <PortfolioCard project={project} image={getImageData(project.imageName)}></PortfolioCard>
-                            </Col>
-                        ))}
-                    </Row>
+                <div className="grid-container">
+                    {projects.map((project, index) => (
+                        <PortfolioCard key={index} project={project} image={getImageData(project.imageName)}></PortfolioCard>
+                    ))}
+                </div>
                 </div>
             </Container>
         </div>
