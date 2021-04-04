@@ -121,6 +121,10 @@ img {
     overflow: hidden;
     line-height: 4rem;
 
+    @media (max-width: 768px) {
+        line-height: 3rem;
+    }
+
     .hero-content-line-inner {
         font-weight: 500;
     }

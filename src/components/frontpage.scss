@@ -13,8 +13,8 @@ h1 {
     display: flex;
     flex-direction: column;
     font-size: 1.5rem;
-    margin-top: 26vh;
-    margin-bottom: 2.5rem;
+    margin-top: 24vh;
+    margin-bottom: 1.5rem;
 
     @media (max-width: 768px) {
         font-size: 1.1rem;
@@ -39,6 +39,10 @@ h1 {
     text-align: center;
     left: 0;
     right: 0;
+
+    @media (max-width: 493px) {
+        display: none;
+    }
 
     span {
         font-size: 1.1rem;
