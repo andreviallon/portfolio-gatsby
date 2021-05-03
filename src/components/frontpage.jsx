@@ -3,7 +3,6 @@ import { Container, Row, Col } from 'react-grid-system';
 import { TimelineLite, TweenMax, Power3 } from 'gsap';
 import './frontpage.scss';
 
-
 export default function Frontpage({ onClick }) {
     let frontPage = useRef(null);
     let title = useRef(null);
